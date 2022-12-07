@@ -173,7 +173,7 @@
   justify-content: space-between;
   padding-top: clamp(0.2em, 2vw, 1em);
   width: 100%;
-  height: clamp(15em, 50vw, 30em);
+  height: clamp(14em, 50vw, 30em);
 }
 .img1,
 .img2,
@@ -182,7 +182,7 @@
 }
 .img img {
   width: 100%;
-  height: 90%;
+  height: 85%;
 }
 .img h5 {
   font-size: clamp(0.5em, 1.7vw, 1em);
@@ -364,7 +364,7 @@ span {
   background-color: #e6c744;
   color: white;
   text-align: center;
-  height: clamp(20em, 10vw, 30em) ;
+  padding: 1em clamp(0.7em, 2vw, 3em) 2em clamp(0.7em, 2vw, 3em);
 }
 .Join h1 {
   font-family: "Poppins", sans-serif;
@@ -400,11 +400,10 @@ input {
   justify-content: center;
   background-color: #000000;
   padding: 1em clamp(0.7em, 2vw, 3em) 1em clamp(0.7em, 2vw, 3em);
-  height: clamp(12em, 2vw, 20em )  ;
 }
 .footer {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
   width: clamp(5em, 90vw, 90em);
 
 }
@@ -445,13 +444,13 @@ input {
   color: #ffffff;
 }
 .footer li {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: clamp(6em, 10vw, 13em);
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  width: clamp(6em, 10vw, 15em);
 }
 .icon img {
   height: clamp(1em, 2vw, 3em);
@@ -460,4 +459,5 @@ input {
 .last {
   display: flex;
   flex-direction: column;
+  margin-top: 12px;
 }
